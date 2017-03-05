@@ -1,0 +1,4 @@
+﻿@mixin menu-navigation($var, $thickness) {
+    color: $var !important;
+    border-bottom: $thickness solid $var;
+}

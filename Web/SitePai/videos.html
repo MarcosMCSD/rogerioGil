@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Videos</title>
+    <meta charset="utf-8" />
+    <!-- Style -->
+    <link href="style/bootstrap.css" rel="stylesheet" />
+
+    <script src="Scripts/frameworks/jquery/jquery-3.1.1.js"></script>
+    <script src="Scripts/frameworks/angular/angular.js"></script>
+    <script src="Scripts/frameworks/angular/angular-sanitize.js"></script>
+    <!-- app -->
+    <script src="Scripts/app/app/app.js"></script>
+    <script src="Scripts/app/app/navDirective.js"></script>
+    <!-- factories -->
+    <script src="Scripts/app/services/shareDataService.js"></script>
+    <script src="Scripts/app/factories/videosFactory.js"></script>
+</head>
+<body class="container" ng-controller="videosController">
+    <!--<nav-dir></nav-dir>-->
+    {{asd}}
+    <section class="section-container">
+        <section class="content">
+            <article class="row">
+                <article class="col-xs-12 col-md-3">
+                    <ul class="list-unstyled videos-ul text-xs-right">
+                        <li class="text-uppercase nv-t-s list-item c-pointer" ng-class="{'active': category == 'fridaynight'}" ng-model="category" ng-click="getVideosByCategory('fridaynight')">Friday Night</li>
+                        <li class="text-uppercase nv-t-s list-item c-pointer" ng-class="{'active': category == 'coffebreak'}" ng-model="category" ng-click="getVideosByCategory('coffebreak')">Coffee Break</li>
+                        <li class="text-uppercase nv-t-s list-item c-pointer" ng-class="{'active': category == 'quarteto'}" ng-model="category" ng-click="getVideosByCategory('quarteto')">Quarteto RG</li>
+                        <li class="text-uppercase nv-t-s list-item c-pointer" ng-class="{'active': category == 'cancoes'}" ng-model="category" ng-click="getVideosByCategory('cancoes')">Canções ao Vivo</li>
+                        <li class="text-uppercase nv-t-s list-item c-pointer" ng-class="{'active': category == 'televisao'}" ng-model="category" ng-click="getVideosByCategory('televisao')">Televisão</li>
+                        <li class="text-uppercase nv-t-s list-item c-pointer" ng-class="{'active': category == 'entrevistas'}" ng-model="category" ng-click="getVideosByCategory('entrevistas')">Entrevistas</li>
+                        <li class="text-uppercase nv-t-s list-item c-pointer" ng-class="{'active': category == 'outros'}" ng-model="category" ng-click="getVideosByCategory('outros')">Outros</li>
+                    </ul>
+                </article>
+                <article class="col-xs-12 col-md-5 videos-tv">
+                    <iframe src="{{displayVideoSource}}" frameborder="0" allowfullscreen></iframe>
+                    <article class="category-info" ng-show="showInfo">
+                        <p>{{title}}</p>
+                        <p>{{description}}</p>
+                    </article>
+                </article>
+                <article class="col-xs-12 col-md-4">
+                    <ul class="list-unstyled videos-ul videos-ul-list text-xs-left">
+                        <li class="text-uppercase nv-t-s list-item c-pointer" ng-class="{'active':songName == video.name}" ng-model="video.name" ng-repeat="video in videosByFilter" ng-click="setVideo(video.source, video.name)">{{($index + 1 ) + ' ' + video.name}}</li>
+                    </ul>
+                </article>
+            </article>
+        </section>
+    </section>
+</body>
+</html>
+

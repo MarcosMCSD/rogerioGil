@@ -1,0 +1,8 @@
+﻿@mixin const-box-shadow($var1, $var2, $var3, $var4, $color, $padding, $m-top) {
+    -moz-box-shadow: $var1 $var2 $var3 $var4 $color;
+    -webkit-box-shadow: $var1 $var2 $var3 $var4 $color;
+    box-shadow: $var1 $var2 $var3 $var4 $color;
+
+    padding:  $padding;
+    margin-top: $m-top;
+}

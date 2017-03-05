@@ -1,0 +1,268 @@
+﻿{
+  "videos": [
+    {
+      "category": "fridaynight",
+      "list": [
+        {
+          "id": 1,
+          "name": "That is it",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/nYV5_8dCHhA",
+          "type": 1
+        },
+        {
+          "id": 2,
+          "name": "Friday Night Project",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/qg2yAehZ-KQ",
+          "type": 1
+        },
+        {
+          "id": 3,
+          "name": "You are always in my heart",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/s9VdtECGt2g",
+          "type": 1
+        },
+        {
+          "id": 4,
+          "name": "You are all in one",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/6rTn6f0IMg8",
+          "type": 1
+        },
+        {
+          "id": 5,
+          "name": "Thinking about you all the time",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/1dNOeGLs_FE",
+          "type": 1
+        },
+        {
+          "id": 6,
+          "name": "Blue oceans",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/1dCM3YCeNMQ",
+          "type": 1
+        },
+        {
+          "id": 7,
+          "name": "Entre a noite e a madrugada",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/FVV5c8TGSrU",
+          "type": 1
+        }
+      ],
+      "description": "Smooth jazz",
+      "title": "Friday Night .... "
+    },
+    {
+      "category": "coffebreak",
+      "list": [
+        {
+          "id": 1,
+          "name": "The look of love",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/UJzPegssiro",
+          "type": 1
+        },
+        {
+          "id": 2,
+          "name": "Orquidea",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/nXsoBay5vpA",
+          "type": 1
+        },
+        {
+          "id": 3,
+          "name": "Papoila",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/6-fZBkE4S8A",
+          "type": 1
+        },
+        {
+          "id": 4,
+          "name": "Violeta",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/eozmnQ_6yGc",
+          "type": 1
+        },
+        {
+          "id": 5,
+          "name": "And i love her",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/LrzmOHe-_OE",
+          "type": 1
+        },
+        {
+          "id": 6,
+          "name": "You've got a friend (James Tylor)",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/KEK1vxHr6IQ",
+          "type": 1
+        },
+        {
+          "id": 7,
+          "name": "Ao vivo",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/teOOKluzr8Y",
+          "type": 1
+        },
+        {
+          "id": 8,
+          "name": "Ao vivo 2",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/1-fDIOr843I",
+          "type": 1
+        }
+      ],
+      "description": "...",
+      "title": "Coffe Break"
+    },
+    {
+      "category": "quarteto",
+      "list": [
+        {
+          "id": 1,
+          "name": "Eu não sei quem te perdeu",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/OrHgoswH_p0",
+          "type": 1
+        },
+        {
+          "id": 2,
+          "name": "Cacilheiro",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/v3Cc6C0Mgk8",
+          "type": 1
+        },
+        {
+          "id": 3,
+          "name": "Medley",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/5CsVJsuTMwM",
+          "type": 1
+        },
+        {
+          "id": 4,
+          "name": "Video apresentação",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/Lyjogu4LR6U",
+          "type": 1
+        },
+        {
+          "id": 5,
+          "name": "Ao vivo (Dancetaria Zen)",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/JYfp92jf9_4",
+          "type": 1
+        }
+      ],
+      "description": "...",
+      "title": "Quarteto RG"
+    },
+    {
+      "category": "cancoes",
+      "list": [
+        {
+          "id": 1,
+          "name": "A minha música",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/x7FbxGOY-KA",
+          "type": 1
+        },
+        {
+          "id": 2,
+          "name": "Cai neve em Nova York",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/RxtbZlBjQ8I",
+          "type": 1
+        },
+        {
+          "id": 3,
+          "name": "Flor sem tempo",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/4fA0GGV4EEI",
+          "type": 1
+        },
+        {
+          "id": 4,
+          "name": "Frágil",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/LpRgntvqVqs",
+          "type": 1
+        },
+        {
+          "id": 5,
+          "name": "No teu poema",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/ZrR2JFM6Vaw",
+          "type": 1
+        },
+        {
+          "id": 6,
+          "name": "Rogério Gil e João Balula - Na Cabana",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/ALhQjr-S7RQ",
+          "type": 1
+        },
+        {
+          "id": 7,
+          "name": "Rogério Gil e João Balula - No teu poema",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/WKJlNy1MHYU",
+          "type": 1
+        },
+        {
+          "id": 8,
+          "name": "Estranha forma de vida",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/oxWmYKJJAXY",
+          "type": 1
+        },
+        {
+          "id": 8,
+          "name": "Memórias de um beijo",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/1KWINTC8gjc",
+          "type": 1
+        }
+      ],
+      "description": "...",
+      "title": "Cançoes ao Vivo"
+    },
+    {
+      "category": "televisao",
+      "list": [],
+      "description": "...",
+      "title": "Televisão"
+    },
+    {
+      "category": "entrevistas",
+      "list": [],
+      "description": "...",
+      "title": "Entrevistas"
+    },
+    {
+      "category": "outros",
+      "list": [
+        {
+          "id": 1,
+          "name": "Ensaio Apocalipse - Faro 1987",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/rNlWqNTsdqU",
+          "type": 1
+        },
+        {
+          "id": 2,
+          "name": "Apocalipse ao Vivo - Faro 1987",
+          "description": "escrever descrição",
+          "source": "https://www.youtube.com/embed/hYw-iGFt_14",
+          "type": 1
+        }
+      ],
+      "description": "...",
+      "title": "Outros"
+    }
+  ]
+}

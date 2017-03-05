@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Discografia</title>
+    <meta charset="utf-8" />
+    <link href="style/bootstrap.css" rel="stylesheet" />
+
+    <script src="Scripts/frameworks/jquery/jquery-3.1.1.js"></script>
+    <script src="Scripts/frameworks/angular/angular.js"></script>
+    <script src="Scripts/frameworks/angular/angular-sanitize.js"></script>
+    <!-- app -->
+    <script src="Scripts/app/app/app.js"></script>
+    <script src="Scripts/app/app/navDirective.js"></script>
+    <!-- factories / controller -->
+    <script src="Scripts/app/controllers/discographyController.js"></script>
+    <script src="Scripts/app/services/shareDataService.js"></script>
+    <script src="Scripts/app/factories/discographyFactory.js"></script>
+</head>
+<body class="container" ng-controller="discographyController">
+    <section class="section-container discography">
+        <section class="content">
+            <article class="row">
+                <article class="col-xs-3 discography-item">
+                    <ul class="list-unstyled videos-ul text-xs-right">
+                        <li class="text-uppercase nv-t-s list-item c-pointer" ng-class="{'active' : listItem == item.category}" ng-model="item.category" ng-repeat="item in collection" ng-click="showItemInfo(item.category)">{{item.title}}</li>
+                    </ul>
+                </article>
+                <article class="col-xs-9">
+                    <article class="row">
+                        <article class="col-xs-4 discography-image">
+                            <img src="{{image}}"/>
+                            <audio controls data-ng-src="{{music}}"></audio>
+                        </article>
+                        <article class="col-xs-8 discography-description">
+                            <h3>{{title}} - {{year}}</h3>
+                            <button ng-click="sendCategory(listItem)" ng-hide="lisItem === 'antigotestamento'">Videos</button>
+                            <p><span>{{status}}</span>{{description}}</p>
+                            <ul class="list-unstyled">
+                                <li class="list-item-title">Formação</li>
+                                <li ng-repeat="member in members">{{member.name}} | {{member.instrument}}</li>
+                            </ul>
+                        </article>
+                    </article>
+                </article>
+            </article>
+        </section>
+    </section>
+</body>
+</html>

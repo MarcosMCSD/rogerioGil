@@ -1,0 +1,144 @@
+﻿{
+  "discography": [
+    {
+      "id": 1,
+      "category": "coffebreak",
+      "title": "Coffee Break Chill&Out",
+      "year": "2015",
+      "description": "O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica.",
+      "members": [
+        {
+          "id": 1,
+          "name": "Rogério Gil",
+          "instrument": "Guitarra, voz e produção músical"
+        },
+        {
+          "id": 2,
+          "name": "Paulo Pereira",
+          "instrument": "Saxofone, soprano e flauta transversal"
+        }
+      ],
+      "music": {
+        "id": 1,
+        "name": "Orquídea - Coffee Break",
+        "source": "songs/orquidea.mp3"
+      },
+      "status": "Edição para breve",
+      "image": "pictures/discography/coffeebreak.jpg"
+    },
+    {
+      "id": 2,
+      "category": "quarteto",
+      "title": "Quarteto RG",
+      "year": "2014",
+      "description": "O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica.",
+      "members": [
+        {
+          "id": 1,
+          "name": "Rogério Gil",
+          "instrument": "Guitarra, voz e produção músical"
+        },
+        {
+          "id": 2,
+          "name": "Paulo Pereira",
+          "instrument": "Saxofone, soprano e flauta transversal"
+        },
+        {
+          "id": 3,
+          "name": "Litas",
+          "instrument": "Baixo"
+        },
+        {
+          "id": 4,
+          "name": "Paju Pereira",
+          "instrument": "Bateria"
+        }
+      ],
+      "music": {
+        "id": 1,
+        "name": "Medley",
+        "source": "songs/medleyQuarteto.mp3"
+      },
+      "status": "A editar",
+      "image": "pictures/discography/quartetorg.jpg"
+    },
+    {
+      "id": 3,
+      "category": "fridaynight",
+      "title": "Friday Night Projet",
+      "year": "2010",
+      "description": "O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica.",
+      "members": [
+        {
+          "id": 1,
+          "name": "Rogério Gil",
+          "instrument": "Guitarra, pianos, baixo, bateria e produção músical"
+        }
+      ],
+      "music": {
+        "id": 1,
+        "name": "Medley",
+        "source": "songs/medleyFriday.mp3"
+      },
+      "status": "Editado em Setembro 2015",
+      "image": "pictures/discography/fridaynight.jpg"
+    },
+    {
+      "id": 4,
+      "category": "lusitanapaixao",
+      "title": "Lusitana Paixão",
+      "year": "2001",
+      "description": "O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica.",
+      "members": [
+        {
+          "id": 1,
+          "name": "Rogério Gil",
+          "instrument": "Composição, guitarra, piano, baixo, bateria e voz"
+        },
+        {
+          "id": 2,
+          "name": "Paulo Laranjeira",
+          "instrument": "Voz"
+        }
+      ],
+      "music": {
+        "id": 1,
+        "name": "Vive para eu viver",
+        "source": "songs/viveParaEuViver.mp3"
+      },
+      "status": "Editado em 2001",
+      "image": "pictures/discography/lusitanapaixao.jpg"
+    },
+    {
+      "id": 5,
+      "category": "antigotestamento",
+      "title": "Antigo Testamento",
+      "year": "1982",
+      "description": "O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica.",
+      "members": [
+        {
+          "id": 1,
+          "name": "Rogério Gil",
+          "instrument": "Guitarra e voz"
+        },
+        {
+          "id": 2,
+          "name": "Joaquim Mateus",
+          "instrument": "Baixo"
+        },
+        {
+          "id": 3,
+          "name": "Rui Teixeira",
+          "instrument": "Bateria"
+        }
+      ],
+      "music": {
+        "id": 1,
+        "name": "Hiroshima",
+        "source": "songs/hiroshima.mp3"
+      },
+      "status": "Editado em 1982",
+      "image": "pictures/discography/antigotestamento.jpg"
+    }
+  ]
+}

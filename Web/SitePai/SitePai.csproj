@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9643E876-B9D1-4932-8832-E729D3F4C851}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SitePai</RootNamespace>
+    <AssemblyName>SitePai</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="model\videos.json" />
+    <Content Include="style\.scss-lint.yml" />
+    <Content Include="style\bootstrap-flex.scss" />
+    <Content Include="style\bootstrap-grid.scss" />
+    <Content Include="style\bootstrap-reboot.scss" />
+    <Content Include="style\bootstrap.scss" />
+    <Content Include="style\components\_alert.scss" />
+    <Content Include="style\components\_animation.scss" />
+    <Content Include="style\components\_breadcrumb.scss" />
+    <Content Include="style\components\_button-group.scss" />
+    <Content Include="style\components\_card.scss" />
+    <Content Include="style\components\_close.scss" />
+    <Content Include="style\components\_custom-forms.scss" />
+    <Content Include="style\components\_dropdown.scss" />
+    <Content Include="style\components\_input-group.scss" />
+    <Content Include="style\components\_jumbotron.scss" />
+    <Content Include="style\components\_list-group.scss" />
+    <Content Include="style\components\_media.scss" />
+    <Content Include="style\components\_nav.scss" />
+    <Content Include="style\components\_navbar.scss" />
+    <Content Include="style\components\_pagination.scss" />
+    <Content Include="style\components\_progress.scss" />
+    <Content Include="style\components\_responsive-embed.scss" />
+    <Content Include="style\components\_tags.scss" />
+    <Content Include="style\core\font-awesome\font-awesome.scss" />
+    <Content Include="style\core\font-awesome\_animated.scss" />
+    <Content Include="style\core\font-awesome\_bordered-pulled.scss" />
+    <Content Include="style\core\font-awesome\_core.scss" />
+    <Content Include="style\core\font-awesome\_fixed-width.scss" />
+    <Content Include="style\core\font-awesome\_icons.scss" />
+    <Content Include="style\core\font-awesome\_larger.scss" />
+    <Content Include="style\core\font-awesome\_list.scss" />
+    <Content Include="style\core\font-awesome\_mixins.scss" />
+    <Content Include="style\core\font-awesome\_path.scss" />
+    <Content Include="style\core\font-awesome\_rotated-flipped.scss" />
+    <Content Include="style\core\font-awesome\_screen-reader.scss" />
+    <Content Include="style\core\font-awesome\_stacked.scss" />
+    <Content Include="style\core\font-awesome\_variables.scss" />
+    <Content Include="style\core\_buttons.scss" />
+    <Content Include="style\core\_code.scss" />
+    <Content Include="style\core\_forms.scss" />
+    <Content Include="style\core\_grid.scss" />
+    <Content Include="style\core\_images.scss" />
+    <Content Include="style\core\_reboot.scss" />
+    <Content Include="style\core\_tables.scss" />
+    <Content Include="style\core\_type.scss" />
+    <Content Include="style\js\_carousel.scss" />
+    <Content Include="style\js\_modal.scss" />
+    <Content Include="style\js\_popover.scss" />
+    <Content Include="style\js\_tooltip.scss" />
+    <Content Include="style\reset\_normalize.scss" />
+    <Content Include="style\reset\_print.scss" />
+    <Content Include="style\utility\utilities\_align.scss" />
+    <Content Include="style\utility\utilities\_background.scss" />
+    <Content Include="style\utility\utilities\_borders.scss" />
+    <Content Include="style\utility\utilities\_clearfix.scss" />
+    <Content Include="style\utility\utilities\_display.scss" />
+    <Content Include="style\utility\utilities\_flex.scss" />
+    <Content Include="style\utility\utilities\_float.scss" />
+    <Content Include="style\utility\utilities\_screenreaders.scss" />
+    <Content Include="style\utility\utilities\_spacing.scss" />
+    <Content Include="style\utility\utilities\_text.scss" />
+    <Content Include="style\utility\utilities\_visibility.scss" />
+    <Content Include="style\utility\_utilities.scss" />
+    <Content Include="style\variables\mixins\main-mixins\_const-box-shadow.scss" />
+    <Content Include="style\variables\mixins\main-mixins\_menu-navigation.scss" />
+    <Content Include="style\variables\mixins\_alert.scss" />
+    <Content Include="style\variables\mixins\_background-variant.scss" />
+    <Content Include="style\variables\mixins\_border-radius.scss" />
+    <Content Include="style\variables\mixins\_breakpoints.scss" />
+    <Content Include="style\variables\mixins\_buttons.scss" />
+    <Content Include="style\variables\mixins\_cards.scss" />
+    <Content Include="style\variables\mixins\_clearfix.scss" />
+    <Content Include="style\variables\mixins\_float.scss" />
+    <Content Include="style\variables\mixins\_forms.scss" />
+    <Content Include="style\variables\mixins\_gradients.scss" />
+    <Content Include="style\variables\mixins\_grid-framework.scss" />
+    <Content Include="style\variables\mixins\_grid.scss" />
+    <Content Include="style\variables\mixins\_hover.scss" />
+    <Content Include="style\variables\mixins\_image.scss" />
+    <Content Include="style\variables\mixins\_list-group.scss" />
+    <Content Include="style\variables\mixins\_lists.scss" />
+    <Content Include="style\variables\mixins\_nav-divider.scss" />
+    <Content Include="style\variables\mixins\_navbar-align.scss" />
+    <Content Include="style\variables\mixins\_pagination.scss" />
+    <Content Include="style\variables\mixins\_progress.scss" />
+    <Content Include="style\variables\mixins\_reset-filter.scss" />
+    <Content Include="style\variables\mixins\_reset-text.scss" />
+    <Content Include="style\variables\mixins\_resize.scss" />
+    <Content Include="style\variables\mixins\_screen-reader.scss" />
+    <Content Include="style\variables\mixins\_size.scss" />
+    <Content Include="style\variables\mixins\_tab-focus.scss" />
+    <Content Include="style\variables\mixins\_table-row.scss" />
+    <Content Include="style\variables\mixins\_tag.scss" />
+    <Content Include="style\variables\mixins\_text-emphasis.scss" />
+    <Content Include="style\variables\mixins\_text-hide.scss" />
+    <Content Include="style\variables\mixins\_text-truncate.scss" />
+    <Content Include="style\variables\_custom.scss" />
+    <Content Include="style\variables\_mixins.scss" />
+    <Content Include="style\variables\_variables.scss" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <Content Include="style\pages\_videos-container.scss" />
+    <Content Include="style\pages\_default-sets.scss" />
+    <Content Include="model\pictures.json" />
+    <Content Include="style\pages\_discography.scss" />
+    <Content Include="model\discography.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="discography.html" />
+    <Content Include="nav.html" />
+    <Content Include="pictures\discography\antigotestamento.jpg" />
+    <Content Include="pictures\discography\quartetorg.jpg" />
+    <Content Include="pictures\discography\lusitanapaixao.jpg" />
+    <Content Include="pictures\discography\coffeebreak.jpg" />
+    <Content Include="pictures\discography\fridaynight.jpg" />
+    <Content Include="Scripts\app\app\navDirective.js" />
+    <Content Include="Scripts\app\controllers\discographyController.js" />
+    <Content Include="Scripts\app\factories\discographyFactory.js" />
+    <Content Include="Scripts\app\services\shareDataService.js" />
+    <Content Include="Scripts\frameworks\angular\angular-sanitize.js" />
+    <Content Include="Scripts\frameworks\angular\angular-sanitize.min.js" />
+    <Content Include="Scripts\app\app\app.js" />
+    <Content Include="Scripts\app\factories\videosFactory.js" />
+    <Content Include="Scripts\frameworks\angular\angular.js" />
+    <Content Include="Scripts\frameworks\angular\angular.min.js" />
+    <Content Include="Scripts\frameworks\jquery\jquery-3.1.1.js" />
+    <Content Include="Scripts\frameworks\jquery\jquery-3.1.1.min.js" />
+    <Content Include="songs\hiroshima.mp3" />
+    <Content Include="songs\medleyFriday.mp3" />
+    <Content Include="songs\medleyQuarteto.mp3" />
+    <Content Include="songs\orquidea.mp3" />
+    <Content Include="songs\viveParaEuViver.mp3" />
+    <Content Include="style\bootstrap.css">
+      <DependentUpon>bootstrap.scss</DependentUpon>
+    </Content>
+    <Content Include="style\bootstrap.min.css">
+      <DependentUpon>bootstrap.css</DependentUpon>
+    </Content>
+    <Content Include="videos.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="style\toastr\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51875</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51875/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
